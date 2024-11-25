@@ -4,15 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "*"
-numpy = "*"
-matplotlib = "*"
-seaborn = "*"
+flask = "*"
 scikit-learn = "*"
-tqdm = "*"
+gunicorn = "*"
 xgboost = "*"
+ScraperFC = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.11"
