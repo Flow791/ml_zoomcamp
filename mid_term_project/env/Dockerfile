@@ -3,7 +3,7 @@ FROM python:3.11-slim
 RUN pip install pipenv
 
 WORKDIR /app
-COPY ["env/Pipfile", "env/Pipfile.lock", "model/model_result_home.bin", "model/model_result_away.bin", "./"]
+COPY ["env/Pipfile", "env/Pipfile.lock", "model/model_result.bin", "model/model_result_home.bin", "model/model_result_away.bin", "./"]
 
 RUN pipenv lock
 RUN pipenv install --system --deploy
